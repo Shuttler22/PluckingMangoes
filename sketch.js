@@ -90,6 +90,6 @@ function detectCollision(x, y){
 
 	var distance = dist(sBodyPosition.x, sBodyPosition.y, mBodyPosition.x, mBodyPosition.y)
 	if(distance<=x.r + y.r){
-		
+		Matter.Body.setStatic(x.body, false)
 	}
 }
